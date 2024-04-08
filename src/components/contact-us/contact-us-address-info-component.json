@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_contact_us_contact_us_address_info_components",
+  "info": {
+    "displayName": "Contact Us Address Info Component",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "addressLabel": {
+      "type": "string",
+      "required": true
+    },
+    "addressContent": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumberLabel": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumberContent": {
+      "type": "string",
+      "required": true
+    },
+    "emailLabel": {
+      "type": "string",
+      "required": true
+    },
+    "emailSales": {
+      "type": "email",
+      "required": true
+    },
+    "emailInfo": {
+      "type": "email",
+      "required": true
+    },
+    "submitFormBtnLabel": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_social_networks",
+  "info": {
+    "displayName": "Social Network",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "socialNetworkLinks": {
+      "displayName": "Social Network Links",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.social-network-links"
+    }
+  }
+}

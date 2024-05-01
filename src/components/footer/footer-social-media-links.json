@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_footer_footer_social_media_links",
+  "info": {
+    "displayName": "Footer Social Media Links",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "instagramUrl": {
+      "type": "string"
+    },
+    "facebookUrl": {
+      "type": "string"
+    },
+    "linkedinUrl": {
+      "type": "string"
+    },
+    "youtubeUrl": {
+      "type": "string"
+    }
+  }
+}

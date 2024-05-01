@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_services_service_feature_list_components",
+  "info": {
+    "displayName": "Service Feature List Component",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "type": "string"
+    }
+  }
+}

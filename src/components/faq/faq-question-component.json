@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_faq_faq_question_components",
+  "info": {
+    "displayName": "FAQ Question Component",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "questionTitle": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

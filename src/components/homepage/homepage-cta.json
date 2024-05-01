@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_homepage_homepage_ctas",
+  "info": {
+    "displayName": "Homepage CTA",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "mainText": {
+      "type": "string"
+    },
+    "ctaButtonLabel": {
+      "type": "string"
+    }
+  }
+}

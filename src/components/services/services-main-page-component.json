@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_services_services_main_page_components",
+  "info": {
+    "displayName": "Services Main Page Component",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "serviceFeatureListComponent": {
+      "displayName": "Service Feature List Component",
+      "type": "component",
+      "repeatable": true,
+      "component": "services.service-feature-list-component"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

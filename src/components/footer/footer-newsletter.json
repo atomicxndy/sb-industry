@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_footer_newsletters",
+  "info": {
+    "displayName": "Footer Newsletter",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionDescription": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_footer_footer_more_links_s",
+  "info": {
+    "displayName": "Footer More Links ",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "gdprPageLabel": {
+      "type": "string"
+    },
+    "termsPageLabel": {
+      "type": "string"
+    },
+    "euFondsPageLabel": {
+      "type": "string"
+    },
+    "faqPageLabel": {
+      "type": "string"
+    }
+  }
+}

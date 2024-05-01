@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "galleries",
+  "info": {
+    "singularName": "gallery",
+    "pluralName": "galleries",
+    "displayName": "Gallery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "pageTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "imageGallery": {
+      "displayName": "Image Gallery",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "gallery.image-gallery",
+      "required": true
+    },
+    "videoGallery": {
+      "displayName": "Video Gallery",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "gallery.video-gallery",
+      "required": true
+    }
+  }
+}

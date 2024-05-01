@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_gallery_video_galleries",
+  "info": {
+    "displayName": "Video Gallery",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "videos": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

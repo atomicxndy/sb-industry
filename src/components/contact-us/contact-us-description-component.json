@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_contact_us_contact_us_description_components",
+  "info": {
+    "displayName": "Contact Us Description Component",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_footer_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "addressData": {
+      "type": "text",
+      "required": true
+    },
+    "phoneData": {
+      "type": "text"
+    }
+  }
+}

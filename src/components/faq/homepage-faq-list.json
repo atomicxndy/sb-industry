@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_faq_homepage_faq_lists",
+  "info": {
+    "displayName": "Homepage - FAQ List",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "faqTitle": {
+      "type": "string",
+      "required": true
+    },
+    "faqDescription": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

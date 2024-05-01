@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_about_us_cta_component_about_us_call_to_action_components",
+  "info": {
+    "displayName": "About Us Call To Action Component",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "ctaMain": {
+      "type": "text",
+      "required": true
+    },
+    "ctaBtnLabel": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_prima_cutting_options_table_primas",
+  "info": {
+    "displayName": "Cutting Options Table - PRIMA",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "inoxLabel": {
+      "type": "string"
+    },
+    "inoxCuttingOption": {
+      "type": "string"
+    },
+    "steelLabel": {
+      "type": "string"
+    },
+    "steelCuttingOption": {
+      "type": "string"
+    },
+    "aluminiumLabel": {
+      "type": "string"
+    },
+    "aluminiumCuttingOption": {
+      "type": "string"
+    }
+  }
+}

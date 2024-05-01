@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "displayName": "SEO",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "required": false
+    },
+    "metaDescription": {
+      "type": "string",
+      "required": false
+    },
+    "keywords": {
+      "type": "string",
+      "required": false
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
+    },
+    "sharedImage": {
+      "displayName": "SharedImage",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.shared-image"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_more_links",
+  "info": {
+    "displayName": "More Links",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "linkValue": {
+      "displayName": "Link",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.link"
+    }
+  }
+}

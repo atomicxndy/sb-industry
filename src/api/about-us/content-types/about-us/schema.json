@@ -25,17 +25,6 @@
       "type": "string",
       "required": true
     },
-    "aboutUsComponentWithImages": {
-      "displayName": "About Us Component with Images",
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "about-us-component-with-images.about-us-component-with-images"
-    },
     "aboutUsCtaComponent": {
       "displayName": "About Us Call To Action Component",
       "type": "component",
@@ -49,17 +38,17 @@
       "required": true
     },
     "headerVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "videos"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      },
-      "required": true
+      }
     }
   }
 }

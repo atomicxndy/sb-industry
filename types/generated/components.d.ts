@@ -1,21 +1,5 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface AboutUsComponentWithImagesAboutUsComponentWithImages
-  extends Schema.Component {
-  collectionName: 'components_about_us_component_with_images_about_us_component_with_images';
-  info: {
-    displayName: 'About Us Component with Images';
-    icon: 'apps';
-    description: '';
-  };
-  attributes: {
-    label: Attribute.String & Attribute.Required;
-    title: Attribute.String & Attribute.Required;
-    description: Attribute.Text & Attribute.Required;
-    image: Attribute.Media & Attribute.Required;
-  };
-}
-
 export interface AboutUsCtaComponentAboutUsCallToActionComponent
   extends Schema.Component {
   collectionName: 'components_about_us_cta_component_about_us_call_to_action_components';
@@ -100,50 +84,83 @@ export interface FooterAddress extends Schema.Component {
   };
 }
 
-export interface FooterLink extends Schema.Component {
-  collectionName: 'components_footer_links';
+export interface FooterFooterMoreLinks extends Schema.Component {
+  collectionName: 'components_footer_footer_more_links_s';
   info: {
-    displayName: 'Link';
+    displayName: 'Footer More Links ';
     icon: 'bulletList';
   };
   attributes: {
-    label: Attribute.String & Attribute.Required;
+    sectionTitle: Attribute.String;
+    gdprPageLabel: Attribute.String;
+    termsPageLabel: Attribute.String;
+    euFondsPageLabel: Attribute.String;
+    faqPageLabel: Attribute.String;
   };
 }
 
-export interface FooterMoreLinks extends Schema.Component {
-  collectionName: 'components_footer_more_links';
+export interface FooterFooterNewsletter extends Schema.Component {
+  collectionName: 'components_footer_footer_newsletters';
   info: {
-    displayName: 'More Links';
-    icon: 'bulletList';
+    displayName: 'Footer Newsletter';
+    icon: 'apps';
   };
   attributes: {
-    linkValue: Attribute.Component<'footer.link', true>;
+    sectionTitle: Attribute.String;
+    sectionDescription: Attribute.String;
   };
 }
 
-export interface FooterSocialNetworkLinks extends Schema.Component {
-  collectionName: 'components_footer_social_network_links';
+export interface FooterFooterSocialMediaLinks extends Schema.Component {
+  collectionName: 'components_footer_footer_social_media_links';
   info: {
-    displayName: 'Social Network Links';
+    displayName: 'Footer Social Media Links';
     icon: 'bulletList';
   };
   attributes: {
-    termsLabel: Attribute.String & Attribute.Required;
+    instagramUrl: Attribute.String;
+    facebookUrl: Attribute.String;
+    linkedinUrl: Attribute.String;
+    youtubeUrl: Attribute.String;
   };
 }
 
-export interface FooterSocialNetwork extends Schema.Component {
-  collectionName: 'components_footer_social_networks';
+export interface GalleryImageGallery extends Schema.Component {
+  collectionName: 'components_gallery_image_galleries';
   info: {
-    displayName: 'Social Network';
-    icon: 'bulletList';
+    displayName: 'Image Gallery';
+    icon: 'apps';
   };
   attributes: {
-    socialNetworkLinks: Attribute.Component<
-      'footer.social-network-links',
-      true
-    >;
+    label: Attribute.String;
+    images: Attribute.Media & Attribute.Required;
+    title: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface GalleryVideoGallery extends Schema.Component {
+  collectionName: 'components_gallery_video_galleries';
+  info: {
+    displayName: 'Video Gallery';
+    icon: 'apps';
+  };
+  attributes: {
+    label: Attribute.String;
+    title: Attribute.String;
+    videos: Attribute.Media & Attribute.Required;
+  };
+}
+
+export interface HomepageHomepageCta extends Schema.Component {
+  collectionName: 'components_homepage_homepage_ctas';
+  info: {
+    displayName: 'Homepage CTA';
+    icon: 'apps';
+  };
+  attributes: {
+    label: Attribute.String;
+    mainText: Attribute.String;
+    ctaButtonLabel: Attribute.String;
   };
 }
 
@@ -162,6 +179,21 @@ export interface PrimaCuttingOptionsTablePrima extends Schema.Component {
     steelCuttingOption: Attribute.String;
     aluminiumLabel: Attribute.String;
     aluminiumCuttingOption: Attribute.String;
+  };
+}
+
+export interface SeoSeo extends Schema.Component {
+  collectionName: 'components_seo_seos';
+  info: {
+    displayName: 'SEO';
+    description: '';
+  };
+  attributes: {
+    metaTitle: Attribute.String;
+    metaDescription: Attribute.String;
+    keywords: Attribute.String;
+    preventIndexing: Attribute.Boolean & Attribute.DefaultTo<false>;
+    sharedImage: Attribute.Component<'shared.shared-image'>;
   };
 }
 
@@ -206,24 +238,92 @@ export interface ServicesServicesMainPageComponent extends Schema.Component {
   };
 }
 
+export interface SharedMetaSocial extends Schema.Component {
+  collectionName: 'components_shared_meta_socials';
+  info: {
+    displayName: 'metaSocial';
+    icon: 'project-diagram';
+  };
+  attributes: {
+    socialNetwork: Attribute.Enumeration<['Facebook', 'Twitter']> &
+      Attribute.Required;
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 60;
+      }>;
+    description: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 65;
+      }>;
+    image: Attribute.Media;
+  };
+}
+
+export interface SharedSeo extends Schema.Component {
+  collectionName: 'components_shared_seos';
+  info: {
+    displayName: 'seo';
+    icon: 'search';
+  };
+  attributes: {
+    metaTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        maxLength: 60;
+      }>;
+    metaDescription: Attribute.String &
+      Attribute.Required &
+      Attribute.SetMinMaxLength<{
+        minLength: 50;
+        maxLength: 160;
+      }>;
+    metaImage: Attribute.Media;
+    metaSocial: Attribute.Component<'shared.meta-social', true>;
+    keywords: Attribute.Text;
+    metaRobots: Attribute.String;
+    structuredData: Attribute.JSON;
+    metaViewport: Attribute.String;
+    canonicalURL: Attribute.String;
+  };
+}
+
+export interface SharedSharedImage extends Schema.Component {
+  collectionName: 'components_shared_shared_images';
+  info: {
+    displayName: 'SharedImage';
+    icon: 'apps';
+  };
+  attributes: {
+    alt: Attribute.String;
+    media: Attribute.Media;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'about-us-component-with-images.about-us-component-with-images': AboutUsComponentWithImagesAboutUsComponentWithImages;
       'about-us-cta-component.about-us-call-to-action-component': AboutUsCtaComponentAboutUsCallToActionComponent;
       'contact-us.contact-us-address-info-component': ContactUsContactUsAddressInfoComponent;
       'contact-us.contact-us-description-component': ContactUsContactUsDescriptionComponent;
       'faq.faq-question-component': FaqFaqQuestionComponent;
       'faq.homepage-faq-list': FaqHomepageFaqList;
       'footer.address': FooterAddress;
-      'footer.link': FooterLink;
-      'footer.more-links': FooterMoreLinks;
-      'footer.social-network-links': FooterSocialNetworkLinks;
-      'footer.social-network': FooterSocialNetwork;
+      'footer.footer-more-links': FooterFooterMoreLinks;
+      'footer.footer-newsletter': FooterFooterNewsletter;
+      'footer.footer-social-media-links': FooterFooterSocialMediaLinks;
+      'gallery.image-gallery': GalleryImageGallery;
+      'gallery.video-gallery': GalleryVideoGallery;
+      'homepage.homepage-cta': HomepageHomepageCta;
       'prima.cutting-options-table-prima': PrimaCuttingOptionsTablePrima;
+      'seo.seo': SeoSeo;
       'services.homepage-services': ServicesHomepageServices;
       'services.service-feature-list-component': ServicesServiceFeatureListComponent;
       'services.services-main-page-component': ServicesServicesMainPageComponent;
+      'shared.meta-social': SharedMetaSocial;
+      'shared.seo': SharedSeo;
+      'shared.shared-image': SharedSharedImage;
     }
   }
 }
